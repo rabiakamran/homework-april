@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>nth-child</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+	<style type="text/css">
+		html, body{
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+                 
+
+
+		}
+		body {
+			font-family: 'Open Sans', sans-serif;
+			background-color: #e3e3e3;
+		}
+		.wrapper {
+			width: 80%;
+			margin: 0 auto;
+			background-color: #ffe6b3;			
+			overflow: hidden;
+			min-height: 100%;
+		}
+		h1 {
+			font-size: 48px;
+			font-weight: 300;
+			text-align: center;
+		}
+		h1.top-heading {color: #006699;}
+		.myTable {
+			width: 60%; 
+			margin: 0 auto;
+		}
+		table {
+		  border-collapse: collapse;
+		  border-spacing: 0;
+		  width: 100%;
+		  border: 1px solid #000;
+                  border-color: solid black;
+		}
+		th, td {
+		  text-align: left;
+		  padding: 16px;
+		}
+		td:nth-child(odd) {
+		  background-color: #f5ecc4
+		}
+		td:nth-child(even) {
+		  background-color: #ffffcc
+		}
+		ul.topList {
+		 list-style-type: none;
+		 margin: 0;
+		 padding: 0;
+		 overflow: hidden;
+		 background-color: #f6f6f8;
+		}
+
+		ul.topList li {
+		 float: left;
+		
+		}
+		
+
+		ul.topList li a {
+		 display: block;
+		 color: #c60021;
+		 text-align: center;
+		 padding: 16px;
+		 text-decoration: none;
+		}
+		
+		ul.topList li a:hover {
+		 background-color: #c60021;
+		 color: #fff;
+		 border-bottom: 2px solid orange;
+		} 
+
+		a#b_btn {
+		    text-decoration: none;
+		    border: 2px solid red;
+		    border-radius: 50%;
+		    padding: 15px;
+		    background-color: #fff;
+		    margin: 100px;
+		    text-align: center;
+		    float: right;
+		    vertical-align: center;
+		}
+		a#b_btn:hover{
+			background-color: red;
+			color: #fff;
+			border-color: #242424;
+
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="wrapper">
+		<ul class="topList">
+			<li> 
+				<a href="#home">Home</a>
+			</li>
+			<li><a href="#news">News</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="#b_btn" id="top_btn">Bottom</a></li>
+
+		</ul>
+
+		<div class="top">
+			<h1 class="top-heading">Rabia Kamran Saeed.</h1>
+                        <center><img src="reference/hh.png" height="200px" width"200px"><center>
+		</div>
+		
+		<h1 class="bottom-heading">Web Developers and Designers.</h1>
+
+		<table id="t01" class="myTable" border="1" cellpadding="5" cellspacing="5">
+			<tr>
+				 <th>Firstname</th>
+				 <th>Lastname</th>
+				 <th>Age</th>
+			</tr>
+			<tr>
+				 <td>Amna</td>
+				 <td>Iqbal</td>
+				 <td>22</td>
+			</tr>
+			<tr>
+				 <td>Maryam</td>
+				 <td>Naveed</td>
+				 <td>24</td>
+			</tr>
+			<tr>
+				 <td>Fiza</td>
+				 <td>Fakhar</td>
+				 <td>21</td>
+			</tr>
+			<tr>
+				 <td>Gohar</td>
+				 <td>Iqbal</td>
+				 <td>21</td>
+			</tr>
+		</table>
+
+				<ul>
+                       <li>Coffee</li>
+                       <li>Tea</li> 
+                       <li>Milk</li>
+                </ul> 
+
+
+               <ul style="list-style-type:disc">
+	               <li>Amna</li>  
+	               <li>Maryam</li> 
+	               <li>Fatima</li>
+               </ul>
+
+               <ul style="list-style-type:square">  
+	               <li>Coffee</li>  
+	               <li>Tea</li>  
+	               <li>Milk</li> 
+	            </ul>  
+	            <ol>  
+	               <li>Coffee</li>
+	               <li>Tea</li> 
+	               <li>Milk</li>
+	            </ol> 
+	            <dl>  
+		               <dt>Coffee</dt>   
+		               <dd>- black hot drink</dd>  
+		               <dt>Milk</dt>
+		               <dd>- white cold drink</dd>
+               	</dl>
+
+
+               <ul > 
+	               <li>Coffee</li>  
+	               <li>Tea     
+	               <ul>   
+	               <li>Black tea</li>   
+	               <li>Green tea</li>     
+	               </ul>  
+	               </li>  
+	               <li>Milk</li>
+               </ul> 
+	<a class="topBtn" id="b_btn" href="#top_btn">Top</a>
+
+	</div>
+	
+
+</body>
+</html>
